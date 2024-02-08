@@ -1,0 +1,1 @@
+Add a are you done loop at the end so you could continue encoding /decoding 

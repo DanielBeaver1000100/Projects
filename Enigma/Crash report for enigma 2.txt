@@ -1,0 +1,4 @@
+when choosing the roter numbers
+if a str is placed instead of an int it crashes
+
+replace inpit with str and have the compairson change it to an int
