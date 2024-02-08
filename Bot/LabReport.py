@@ -25,11 +25,11 @@ finally:
         while keyboard.is_pressed('print screen')== True:
             sleep(1)
             photoid+=1
-            'Screen shot from pixel X=0 Y=0 width=100 hight=100'
+            'Screen shot from pixel X=0 Y=0 to pixel X Y'
             iml = pyautogui.screenshot(region=(488,118,1428,956))
             'Save in folder'
             iml.save(r"C:\Users\danie\Desktop\school\Python\Bot\BotPhotos\Lab Report\Photo"+str(photoid)+".png")
-            'play sound for audo que'
+            'play sound for audio que'
             frequency = 1000  # Frequency in Hertz
             duration = 500  # Duration in milliseconds
             winsound.Beep(frequency, duration)
