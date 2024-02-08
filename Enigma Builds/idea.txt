@@ -1,0 +1,4 @@
+Fix For input being more than 1 Character
+
+Add an and statement to the if
+if...and plugin.len()>1
