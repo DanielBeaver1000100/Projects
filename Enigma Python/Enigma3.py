@@ -14,7 +14,6 @@ def checkDictionary(letter,dic):
     else:
         ex=True
     return ex
-
 def checkForLetter(letter):
     ex=False
     string='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -243,16 +242,28 @@ def main():
     
     '''
     ##Fast manual input
-    roter1=8
-    roter1Rot=8
-    notch1=1
+    plugDict.update({"A":"B"})
+    plugDict.update({"B":"A"})
+    plugDict.update({"Y":"Z"})
+    plugDict.update({"Z":"Y"})
+    plugDict.update({"D":"V"})
+    plugDict.update({"V":"D"})
+    plugDict.update({"E":"R"})
+    plugDict.update({"R":"E"})
+    plugDict.update({"Q":"M"})
+    plugDict.update({"M":"Q"})
+    plugDict.update({"L":"C"})
+    plugDict.update({"C":"L"})
+    roter1=4
+    roter1Rot=25
+    notch1=26
     roter2=3
-    roter2Rot=5
-    notch2=5
-    roter3=5
-    roter3Rot=5
-    mirror='B'
-    ##'''
+    roter2Rot=15
+    notch2=1
+    roter3=8
+    roter3Rot=16
+    mirror='C'
+    '''
     con='T'
     while con=='T':
         print('note numbers and spaces will not be scrambled')
