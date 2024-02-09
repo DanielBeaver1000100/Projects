@@ -7,3 +7,7 @@ when choosing roter numbers and orientation make the inputs a try so it doesnt c
 in the encoding process make the copy sequence a switch case to reduce time 
 
 make a version that can encode txt files 
+
+When prompted "Do you wish to continue" after saying y the original spin setup runs again
+the spin function doesnt spin the roters all the way
+the mirror logic seems off
