@@ -35,10 +35,6 @@ finally:
             winsound.Beep(frequency, duration)
 
 
-    
+    # Bot requires user to change the file path name of user to work
     # If program is stopped and restarted any photos that have the same name in the folder will be overwritten 
     # Continuation of a prevous run requires changing the 'photoid' to the last photo number in the report
-        
-        
-
-        
