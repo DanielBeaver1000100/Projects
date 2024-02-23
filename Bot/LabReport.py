@@ -8,7 +8,7 @@ import win32api, win32con
 import winsound 
 import os
 
-FilePath=os.path.expanduser(r"C:\Users\danie\Desktop\school\Python\Bot\BotPhotos\Lab Report")
+FilePath=os.path.expanduser(r"C:\Users\YourName\Documents\GitHub\Projects\Bot\BotPhotos\BotScreen Shot\Lab Report")
 # 'try' to make the Lab Report folder
 try:
     os.mkdir(FilePath)
@@ -28,7 +28,7 @@ finally:
             'Screen shot from pixel X=0 Y=0 to pixel X Y'
             iml = pyautogui.screenshot(region=(488,118,1428,956))
             'Save in folder'
-            iml.save(r"C:\Users\danie\Desktop\school\Python\Bot\BotPhotos\Lab Report\Photo"+str(photoid)+".png")
+            iml.save(r"C:\Users\YourName\Documents\GitHub\Projects\Bot\BotPhotos\BotScreen Shot\Lab Report\Photo"+str(photoid)+".png")
             'play sound for audio que'
             frequency = 1000  # Frequency in Hertz
             duration = 500  # Duration in milliseconds
