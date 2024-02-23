@@ -8,13 +8,14 @@ import win32api, win32con
 import winsound 
 import os
 
+#Generate file path for the lab folder
 FilePath=os.path.expanduser(r"C:\Users\YourName\Documents\GitHub\Projects\Bot\BotPhotos\BotScreen Shot\Lab Report")
 # 'try' to make the Lab Report folder
 try:
     os.mkdir(FilePath)
 except:
     print("folder exists")
-# 'finally' means anything after will always happen
+# 'finally' anything after will always happen
 finally:
     # Photo number
     photoid=0
