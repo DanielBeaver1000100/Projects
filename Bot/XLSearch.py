@@ -14,13 +14,17 @@ def print_first_name_from_excel(file_path, column):
             Title = cell.value
             try:
                 First_Name=Title.split()[1] 
-                Last_name = Title.split()[2]  # Split the full name and get the 3rd part
-                print(f"#{i}: {First_Name , Last_name}")
-                pyperclip.copy(Last_name)
-                input("Press Enter to continue to the next row...")
+                 # Split the  name and get the part
             except:
-                print("*")
-            
+                First_Name="*"
+            try:
+               Last_name = Title.split()[2] 
+            except:
+                Last_name="*" 
+            print(f"#{i}: {First_Name , Last_name}")
+            pyperclip.copy(Last_name)
+            input("Press Enter to continue to the next row...")
+    
     except FileNotFoundError:
         print("File not found.")
     except KeyError:
