@@ -1,5 +1,7 @@
 import pyperclip
 import openpyxl
+import keyboard
+import time
 
 def print_first_name_from_excel(file_path, column, skip=1):
     try:
@@ -24,8 +26,8 @@ def print_first_name_from_excel(file_path, column, skip=1):
                     Last_name="*" 
                 print(f"#{i}: {First_Name , Last_name}")
                 pyperclip.copy(Last_name)
-                input("Press Enter to continue...")
-    
+                while (keyboard.is_pressed('q')==False):
+                    time.sleep(1)
     except FileNotFoundError:
         print("File not found.")
     except KeyError:
